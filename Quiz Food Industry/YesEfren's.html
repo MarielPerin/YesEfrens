@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes Efren's Special BBQ</title>
+    <link rel="stylesheet" href="YesEfren's.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Yes Efren's Special BBQ</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about"></a>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="title">YES EFREN'S SPECIAL BBQ</h1>
+            <img src="comboHome.png" alt="">
+            <img src="y12.png" alt="" class="sample">
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu-content">
+            <h3>YES COMBO MEALS!</h3><br>
+            <div class="box">
+                <img src="y1.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y1</h2>
+                <span class="price">₱95.00</span>
+            </div>
+            <div class="box">
+                <img src="y2.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y2</h2>
+                <span class="price">₱139.00</span>
+            </div>
+            <div class="box">
+                <img src="y3.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y3</h2>
+                <span class="price">₱129.00</span>
+            </div>
+            <div class="box">
+                <img src="y4.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y4</h2>
+                <span class="price">₱129.00</span>
+            </div>
+            <div class="box">
+                <img src="y5.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y5</h2>
+                <span class="price">₱129.00</span>
+            </div>
+            <div class="box">
+                <img src="y6.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y6</h2>
+                <span class="price">₱129.00</span>
+            </div>
+            <div class="box">
+                <img src="y7.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y7</h2>
+                <span class="price">₱235.00</span>
+            </div>
+            <div class="box">
+                <img src="y8.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y8</h2>
+                <span class="price">₱229.00</span>
+            </div>
+            <div class="box">
+                <img src="y9.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y9</h2>
+                <span class="price">₱175.00</span>
+            </div>
+            <div class="box">
+                <img src="y10.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y10</h2>
+                <span class="price">₱125.00</span>
+            </div>
+            <div class="box">
+                <img src="y11.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y11</h2>
+                <span class="price">₱135.00</span>
+            </div>
+            <div class="box">
+                <img src="y12.png" alt="" class="menuImg">
+                <h2 class="menuName">Y12</h2>
+                <span class="price"> <span>₱</span>269.00</span>
+            </div>
+            <div class="box">
+                <img src="y13.png" alt="" class="menuImg" id="menuImg" onclick="displayDetails()">
+                <h2 class="menuName">Y13</h2>
+                <span class="price">₱129.00</span>
+            </div>
+            <div class="box">
+                <img src="y14.png" alt="" class="menuImg">
+                <h2 class="menuName">Y14</h2>
+                <span class="price"> <span>₱</span>299.00</span>
+            </div>
+
+            <p id="display"></p>
+
+    </section>
+</body>
+
+<script>
+
+    function displayDetails(imgSrc, title, price) {
+        const detailImage = document.getElementById('menuImg');
+        const detailTitle = document.getElementById('menuName');
+        const detailPrice = document.getElementById('price');
+
+        detailImage.src = imgSrc;
+        detailTitle.textContent = title;
+        detailPrice.textContent = price;
+
+        detailsDiv.style.display = '';
+    }
+</script>
+
+</html>
